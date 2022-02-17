@@ -16,10 +16,11 @@ document.getElementById('calculatr-Amount').addEventListener('click', function (
     const totalClothesFoodAmount = clothesAmount.value;
     clothesAmount.value = '';
 
-    // const totalExpenses = totalFoodAmount + totalRentAmount + totalClothesFoodAmount;
+    const totalExpenses = totalFoodAmount + totalRentAmount + totalClothesFoodAmount;
+    const foodRentClotes = parseFloat(totalExpenses);
 
-    // const totalBalance = totalExpenses - totalAmount;
-    // console.log(totalBalance);
-    console.log(totalFoodAmount + totalRentAmount + totalClothesFoodAmount);
+    foodRentClotes = document.getElementById('Ext-Expenses');
+    const totalExpence = totalExpenses.innerText;
+    console.log(totalExpence);
 
 })
